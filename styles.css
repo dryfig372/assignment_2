@@ -1,0 +1,138 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}  
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+background-color: #BFA6A2;
+padding: 20px;
+}
+
+.whats-new {
+background-color: #BFA6A2;
+padding: 20px;
+}
+
+.side {
+    flex: 30%;
+    font-family: Gill Sans;
+    color: black;
+}
+
+.welcome {
+background-color: white;
+flex: 70%;
+padding: 20px;
+font-family: Gill Sans;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:black;
+    color:white;
+}
+
+.tab {
+    padding: 15px 20px;
+    text-align: center;
+    font-family: Gill Sans;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.book {
+    max-width: 150px;
+    height: auto;
+}
+
+.bar {
+    padding: 5px;
+    background-color: white;
+    color: gray;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    padding: 5px;
+    background-color: brown;
+    color: white;
+}
+
+.bar-space {
+    padding: 4px;
+    background-color: #BFA6A2;
+}
+
+.button-space {
+    padding: 5px;
+    background-color: #BFA6A2;
+}
+
+.genres {
+    display: flex;
+    flex-direction: row;
+}
+
+.genre-space {
+    padding: 10px;
+}
+
+.genre {
+    background-color: brown;
+    padding: 90px;
+    flex: 33%;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .button {
+        flex: 50%;
+    }
+    
+    .genre {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .button {
+        flex: 50%;
+    }
+    
+    .nav {
+        flex-direction: column;
+    }
+
+    .genres {
+        flex-direction: column;
+    }
+
+    .genre {
+        padding: 10px;
+    }
+}
+
